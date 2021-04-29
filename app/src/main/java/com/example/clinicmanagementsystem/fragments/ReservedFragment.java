@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.clinicmanagementsystem.Adapters.AdapterDoctor;
+import com.example.clinicmanagementsystem.Adapters.AdapterReserved;
 import com.example.clinicmanagementsystem.R;
 import com.example.clinicmanagementsystem.db.AccountDataBase;
 import com.example.clinicmanagementsystem.models.Doctor;
@@ -48,7 +49,7 @@ public class ReservedFragment extends Fragment {
             if(list!=null)
                 reserved.add(new Doctor(name_dr, appointment));
         }
-        AdapterDoctor adapterDoctor =new AdapterDoctor(reserved,getActivity());
+        AdapterReserved adapterDoctor =new AdapterReserved(reserved,getActivity());
         recyclerView.setAdapter(adapterDoctor);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         return view;

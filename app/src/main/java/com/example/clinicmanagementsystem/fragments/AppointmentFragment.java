@@ -58,7 +58,7 @@ public class AppointmentFragment extends Fragment {
         doctors.add(new Doctor(getString(R.string.name_dr_1),getString(R.string.appoinment_dr_1)));
         doctors.add(new Doctor(getString(R.string.name_dr_1),getString(R.string.appoinment_dr_1)));
 
-        AdapterDoctor adapterdoctors = new AdapterDoctor(doctors, new OnItemClickListener() {
+        AdapterDoctor adapterdoctors = new AdapterDoctor(getActivity(),doctors, new OnItemClickListener() {
             @Override
             public void onItemClick(Doctor doctor) {
                 listener.onFragmentInteraction(doctor);
