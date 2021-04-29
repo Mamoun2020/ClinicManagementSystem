@@ -13,11 +13,11 @@ import java.util.ArrayList;
 
 
 public class AccountDataBase extends SQLiteOpenHelper {
-    public static final int DB_VERSION = 5;
-    public static final String DB_NAME="patient";
+    public static final int DB_VERSION = 30;
+    public static final String DB_NAME="patients";
 
     //this section of variables to patient Accounts
-    public static final String TABLE_NAME="account_patient";
+    public static final String TABLE_NAME="account_patients";
     public static final String PATIENT_CLN_INSURANCE="NumberInsurance";
     public static final String PATIENT_CLN_PHONE="NumberPhone";
     public static final String PATIENT_CLN_PASSWORD="Password";
@@ -67,13 +67,12 @@ public class AccountDataBase extends SQLiteOpenHelper {
     public boolean CheckPatientExist(String insurance, String password){
         SQLiteDatabase DB = getReadableDatabase();
         String[] columns = {PATIENT_CLN_INSURANCE};
-        String selection = "NumberInsurance =? AND Password =? ";
+        String selection = "NumberInsurance=? AND Password=? ";
         String[] selectionArgs = {insurance,password};
         Cursor cursor = DB.query(TABLE_NAME,columns,selection, selectionArgs, null, null, null);
         int count = cursor.getCount();
         cursor.close();
         close();
-
         if(count > 0){
             return true;
         } else {

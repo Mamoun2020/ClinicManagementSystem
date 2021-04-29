@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,14 +21,16 @@ public class AdapterDoctor extends RecyclerView.Adapter<AdapterDoctor.DoctorView
     ArrayList<Doctor> doctors;
     OnItemClickListener onItemClickListener;
     Context context;
-    public AdapterDoctor(ArrayList<Doctor>doctors,OnItemClickListener onItemClickListener){
+//    Context context;
+    public AdapterDoctor(Context context,ArrayList<Doctor>doctors,OnItemClickListener onItemClickListener){
+        this.context=context;
         this.doctors=doctors;
        this.onItemClickListener=onItemClickListener;
     }
-    public AdapterDoctor(ArrayList<Doctor>doctors, Context context){
-        this.doctors=doctors;
-        this.context=context;
-    }
+//    public AdapterDoctor(ArrayList<Doctor>doctors, Context context){
+//        this.doctors=doctors;
+//        this.context=context;
+//    }
     @NonNull
     @Override
     public DoctorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -39,14 +42,16 @@ public class AdapterDoctor extends RecyclerView.Adapter<AdapterDoctor.DoctorView
     public void onBindViewHolder(@NonNull DoctorViewHolder holder, int position) {
         Doctor doctor = doctors.get(position);
         holder.bind(doctor);
-        AccountDataBase db = new AccountDataBase(context);
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                db.delete(position);
-                return false;
-            }
-        });
+//        AccountDataBase db = new AccountDataBase(context);
+//        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View view) {
+//               doctors.remove(position);
+//                notifyDataSetChanged();
+//                db.delete(position);
+//                return true;
+//            }
+//        });
     }
 
     @Override
@@ -66,6 +71,7 @@ public class AdapterDoctor extends RecyclerView.Adapter<AdapterDoctor.DoctorView
 //                    Intent intent = new Intent(context, ReservedActivity.class);
 //                    context.startActivity(intent);
                     onItemClickListener.onItemClick(doctor);
+                    Toast.makeText(context,"تم حجز موعد في العيادة يمكنك الاطلاع على قسم الحجز لمعرفة التفاصيل",Toast.LENGTH_SHORT).show();
                 }
             });
         }
