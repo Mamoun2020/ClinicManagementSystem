@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Clinic Management System</string>
+    <!--    login activity-->
+    <string name="login_tv_title"> Patient Login </string>
+    <string name="login_et_insurance">Health Insurance Number</string>
+    <string name="login_et_password">Password</string>
+    <string name="login_tv_remember">Remember me</string>
+    <string name="login_tv_forget">Forget Password?</string>
+    <string name="login_btn_login">Log In</string>
+    <string name="login_tv_haveacc">"Already haven't Account?"</string>
+    <string name="login_tv_signup">Sign Up</string>
+    <string name="login_tv_error">Login failed.Invalid insurance or password.</string>
+    <!--    signup activity-->
+    <string name="signup_tv_title">Patient Sign Up</string>
+    <string name="signup_et_username">Enter Health Insurance Number </string>
+    <string name="signup_et_phone">Enter Your Phone Number</string>
+    <string name="signup_et_password">Enter Your Password</string>
+    <string name="signup_et_address">Enter Your Address</string>
+    <string name="signup_btn_signup">Sign Up</string>
+    <string name="signup_tv_haveacc">Have you Account?</string>
+    <string name="signup_tv_login">Log In</string>
+    <string name="signup_tv_result1">Success Sign Up</string>
+    <string name="signup_tv_result2">Enter Your Information</string>
+    <string name="signup_tv_result3">The Entry is Wrong</string>
+    <!--    forget activity-->
+    <string name="forget_tv_title">Reset a Password</string>
+    <string name="forget_et_username">User Name</string>
+    <string name="forget_et_password">Enter New Password</string>
+    <string name="forget_et_conpassword">Confirm the new Password</string>
+    <string name="forget_btn_ok">OK</string>
+    <string name="forget_tv_error1">"Password doesn't match"</string>
+    <string name="forget_tv_msg">The Password has been reset successfully</string>
+    <string name="forget_tv_error2">User Not Found</string>
+    <!--    main activity-->
+    <string name="main_message_dialog">Do you want to exit the app?</string>
+    <string name="main_title_dialog">Exit</string>
+    <string name="main_yes_dialog">Yes</string>
+    <string name="main_no_dialog">No</string>
+
+    <string name="menu_item_patient">Information Patient</string>
+    <string name="menu_item_about">About us</string>
+    <string name="menu_item_exist">Exist</string>
+    <string name="title_doctor">name Doctor : </string>
+    <string name="title_appointment">Appointment : </string>
+    <string name="appoinment_dr_1"> from saturday to Wednesday 2 am </string>
+    <string name="name_dr_1"> Dr. Ahmad Mustafa </string>
+    <string name="menu_item_reserveddr">Reserved a Doctor</string>
+    <string name="bottom_title_appointment">Appointment</string>
+    <string name="bottom_title_reserved">Reserved</string>
+
+</resources>

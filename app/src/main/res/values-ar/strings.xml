@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">نظام إدارة عيادة</string>
+    <!--    login activity-->
+    <string name="login_tv_title">تسجيل دخول المرضى</string>
+    <string name="login_et_insurance">رقم التأمين الصحي</string>
+    <string name="login_et_password">كلمة السر</string>
+    <string name="login_tv_remember">تذكرني</string>
+    <string name="login_tv_forget">نسيت كلمة السر؟</string>
+    <string name="login_btn_login">تسجيل دخول</string>
+    <string name="login_tv_haveacc">لا تمتلك حساب ؟</string>
+    <string name="login_tv_signup">تسجيل</string>
+    <string name="login_tv_error">فشل تسجيل الدخول.رقم التأمين أو كلمة السر غير صحيحة</string>
+    <!--    signup activity-->
+    <string name="signup_tv_title"> تسجيل المرضى</string>
+    <string name="signup_et_username">ادخل رقم التأمين الصحي </string>
+    <string name="signup_et_phone">ادخل رقم هاتفك</string>
+    <string name="signup_et_password">ادخل رقمك السري</string>
+    <string name="signup_et_address">ادخل عنوانك</string>
+    <string name="signup_btn_signup">تسجيل</string>
+    <string name="signup_tv_haveacc">هل تمتلك حساب؟</string>
+    <string name="signup_tv_login">تسجيل الدخول</string>
+    <string name="signup_tv_result1">تم التسجيل بنجاح</string>
+    <string name="signup_tv_result2">قم بإدخال بياناتك</string>
+    <string name="signup_tv_result3">الإدخال خاطئ</string>
+    <!--    forget activity-->
+    <string name="forget_tv_title">اعادة تعيين كلمة المرور</string>
+    <string name="forget_et_username">اسم المستخدم</string>
+    <string name="forget_et_password">تعيين كلمة سر جديدة</string>
+    <string name="forget_et_conpassword">تأكيد كلمة سر الجديدة</string>
+    <string name="forget_btn_ok">تم</string>
+    <string name="forget_tv_error1">كلمة السر غير متطابقة</string>
+    <string name="forget_tv_msg">تم إعادة تعيين كلمة السر بنجاح</string>
+    <string name="forget_tv_error2">المستخدم غير موجود</string>
+    <!--    main activity-->
+    <string name="main_message_dialog">هل تود الخروج من التطبيق؟</string>
+    <string name="main_title_dialog">خروج</string>
+    <string name="main_yes_dialog">نعم</string>
+    <string name="main_no_dialog">لا</string>
+    <string name="menu_item_patient">معلومات المريض</string>
+    <string name="menu_item_about">حول التطبيق</string>
+    <string name="menu_item_exist">خروج</string>
+    <string name="title_doctor">الدكتور :</string>
+    <string name="title_appointment">المواعيد:</string>
+    <string name="appoinment_dr_1">من السبت إلى الأربعاء الساعة 2</string>
+    <string name="name_dr_1">د. أحمد مصطفى</string>
+    <string name="menu_item_reserveddr">حجز موعد</string>
+    <string name="bottom_title_appointment">المواعيد</string>
+    <string name="bottom_title_reserved">الحجز</string>
+</resources>
